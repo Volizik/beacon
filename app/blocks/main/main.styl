@@ -1,0 +1,98 @@
+.main
+  padding-bottom 38px
+  display block
+  color #353646
+  background-color #fff
+  &__img
+    margin-top 33px
+    margin-left 32px
+    +below(1200px)
+      margin 0
+      width 100%
+  &__block
+    display flex
+    +below(992px)
+      flex-direction column
+  &__desc
+    padding-right 33px
+    padding-left 110px
+    flex-basis 47%
+    +below(1200px)
+      padding-left 0
+    +below(992px)
+      padding-right 0
+  &__text
+    margin-top 36px
+    font-family latoReg
+    font-size 24px
+    line-height 30px
+    +below(500px)
+      font-size 18px
+    strong
+      font-family latoBlack
+      text-transform uppercase
+    span
+      white-space nowrap
+  &__title
+    margin-top 15px
+    font-family latoBlack
+    font-size 30px
+    text-align right
+    text-transform uppercase
+    +below(500px)
+      font-size 21px
+  &__card
+    margin-top -30px
+    padding 15px 45px 25px
+    display flex
+    align-items flex-start
+    flex-basis 48%
+    background-color #fff
+    box-shadow 3px 3px 10px #ddd
+    +below(1200px)
+      flex-basis 53%
+    +below(992px)
+      margin-top 20px
+    +below(470px)
+      padding 15px 20px 25px
+      flex-direction column
+      align-items center
+  &__card-img
+    +below(470px)
+      width 80px
+  &__card-text
+    margin-top 11px
+    margin-left 16px
+    display flex
+    flex-direction column
+    align-items flex-start
+    +below(500px)
+      margin 0
+      align-items center
+  &__card-list
+    margin 0
+    padding 0
+    list-style-type none
+    li
+      font-family latoReg
+      font-size 21px
+      line-height 27px
+      +below(500px)
+        font-size 18px
+      strong
+        font-family LatoBlack
+  &__card-btn
+    margin-top 20px
+    min-width 240px
+    height 52px
+    font-family latoBlack
+    font-size 18px
+    text-transform uppercase
+    color #fff
+    background-color #d12647
+    border none
+    border-radius 30px
+    box-shadow 3px 3px 10px #999
+    transition .5s
+    &:hover
+      box-shadow none

@@ -1,0 +1,21 @@
+include ../container/container
+
+mixin footer()
+    +b('footer').footer
+        +container()
+            +e('h3').title Support:  (844) 295-0900
+            +e('p').desc support@frontdeskhelpers.com
+            +e.social
+                +e('a').social-link(href='#')
+                    i(class='fab fa-facebook-f')
+                +e('a').social-link(href='#')
+                    i(class='fab fa-google-plus-g')
+                +e('a').social-link(href='#')
+                    i(class='fab fa-youtube-square')
+                +e('a').social-link(href='#')
+                    i(class='fab fa-linkedin-in')
+            +e.links
+                +e('a').link(href='#') Privacy Policy
+                +e('a').link(href='#') Terms of Service
+                +e('a').link(href='#') Terms of Sales
+            +e('span').copy © 2017 FDH Cloud

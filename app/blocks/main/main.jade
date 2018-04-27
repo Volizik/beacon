@@ -1,0 +1,27 @@
+include ../container/container
+
+mixin main()
+    +b('main').main
+        +container()
+            +e('img').img(src='assets/images/main-img.png')
+            +e.block
+                +e.desc
+                    +e('p').text
+                        | Broadcast your website for
+                        strong FREE.
+                        | This feature is available for free for one
+                        span URL-address.
+                    +e('h2').title limited time offer
+                +e.card
+                    +e('img').card-img(src='assets/images/easy-steps.png')
+                    +e.card-text
+                        +e('ul').card-list
+                            +e('li') 1. Buy a beacon or use yours
+                            +e('li')
+                                | 2. Set up your website advertising using
+                                strong FDH.cloud
+                            +e('li')
+                                | 3. Broadcast your website for
+                                strong FREE
+                                | and analyze the progress
+                        +e('button').card-btn try now
